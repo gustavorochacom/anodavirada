@@ -18,6 +18,8 @@
                     <li><a href="#inicio" class="nav-link">Início</a></li>
                     <li><a href="#modulos" class="nav-link">Módulos</a></li>
                     <li><a href="#topicos" class="nav-link">Tópicos</a></li>
+                    <li><a href="#prompts" class="nav-link">Prompts</a></li>
+                    <li><a href="#gerador" class="nav-link">Gerador</a></li>
                     <li><a href="#exercicios" class="nav-link">Exercícios</a></li>
                     <li><a href="#autor" class="nav-link">Autor</a></li>
                 </ul>
@@ -122,29 +124,223 @@
         </div>
     </section>
 
+    <!-- Prompts Prontos para Copiar -->
+    <section class="prompts-section" id="prompts">
+        <div class="container">
+            <h2>Prompts Prontos para Copiar</h2>
+            <p class="prompts-subtitle">Utilize esses prompts com suas ferramentas de IA para obter melhores resultados na prática jurídica</p>
+            
+            <div class="prompts-tabs">
+                <button class="prompt-tab-btn active" data-category="analise">Análise</button>
+                <button class="prompt-tab-btn" data-category="geracao">Geração</button>
+                <button class="prompt-tab-btn" data-category="pesquisa">Pesquisa</button>
+                <button class="prompt-tab-btn" data-category="estrategia">Estratégia</button>
+            </div>
+
+            <div class="prompts-grid">
+                <!-- Análise de Contratos -->
+                <div class="prompt-card" data-category="analise">
+                    <h3>Análise de Contrato</h3>
+                    <p class="prompt-description">Analisa contratos e identifica cláusulas importantes, riscos e oportunidades</p>
+                    <div class="prompt-content">
+                        <p>Você é um advogado especializado em direito contratual. Analise o contrato abaixo e identifique:</p>
+                        <p>1. Cláusulas de rescisão e multas</p>
+                        <p>2. Obrigações de cada parte</p>
+                        <p>3. Possíveis riscos legais</p>
+                        <p>4. Lacunas ou ambiguidades</p>
+                        <p>5. Recomendações de melhoria</p>
+                        <p>Forneça a análise em formato de lista com explicações concisas.</p>
+                    </div>
+                    <button class="copy-prompt-btn" data-prompt="Você é um advogado especializado em direito contratual. Analise o contrato abaixo e identifique: 1. Cláusulas de rescisão e multas 2. Obrigações de cada parte 3. Possíveis riscos legais 4. Lacunas ou ambiguidades 5. Recomendações de melhoria. Forneça a análise em formato de lista com explicações concisas.">Copiar Prompt</button>
+                </div>
+
+                <!-- Análise de Jurisprudência -->
+                <div class="prompt-card" data-category="pesquisa">
+                    <h3>Pesquisa Jurisprudencial</h3>
+                    <p class="prompt-description">Busca e sintetiza jurisprudência relevante sobre um tema</p>
+                    <div class="prompt-content">
+                        <p>Você é um pesquisador jurídico especializado. Procure jurisprudência relevante sobre [TEMA] e:</p>
+                        <p>1. Identifique as tendências principais</p>
+                        <p>2. Destaque decisões mais recentes</p>
+                        <p>3. Aponte divergências entre tribunais</p>
+                        <p>4. Resuma argumentos principais</p>
+                        <p>5. Indique casos paradigmáticos</p>
+                        <p>Organize em formato de tabela com: Tribunal | Data | Tema | Decisão | Argumento Principal</p>
+                    </div>
+                    <button class="copy-prompt-btn" data-prompt="Você é um pesquisador jurídico especializado. Procure jurisprudência relevante sobre [TEMA] e: 1. Identifique as tendências principais 2. Destaque decisões mais recentes 3. Aponte divergências entre tribunais 4. Resuma argumentos principais 5. Indique casos paradigmáticos. Organize em formato de tabela com: Tribunal | Data | Tema | Decisão | Argumento Principal">Copiar Prompt</button>
+                </div>
+
+                <!-- Geração de Documento -->
+                <div class="prompt-card" data-category="geracao">
+                    <h3>Geração de Documento</h3>
+                    <p class="prompt-description">Cria rascunhos de documentos jurídicos</p>
+                    <div class="prompt-content">
+                        <p>Você é um advogado experiente. Crie um rascunho de [TIPO DE DOCUMENTO] com os seguintes dados:</p>
+                        <p>Partes: [NOMES]</p>
+                        <p>Objeto: [DESCRIÇÃO]</p>
+                        <p>Termos principais: [ESPECIFIQUE]</p>
+                        <p>Requisitos legais: [LEGISLAÇÃO APLICÁVEL]</p>
+                        <p>O documento deve ser profissional, claro e juridicamente sólido. Inclua todas as cláusulas essenciais.</p>
+                    </div>
+                    <button class="copy-prompt-btn" data-prompt="Você é um advogado experiente. Crie um rascunho de [TIPO DE DOCUMENTO] com os seguintes dados: Partes: [NOMES] Objeto: [DESCRIÇÃO] Termos principais: [ESPECIFIQUE] Requisitos legais: [LEGISLAÇÃO APLICÁVEL] O documento deve ser profissional, claro e juridicamente sólido. Inclua todas as cláusulas essenciais.">Copiar Prompt</button>
+                </div>
+
+                <!-- Estratégia Processual -->
+                <div class="prompt-card" data-category="estrategia">
+                    <h3>Estratégia Processual</h3>
+                    <p class="prompt-description">Desenvolve estratégias para casos jurídicos</p>
+                    <div class="prompt-content">
+                        <p>Você é um advogado estratégico. Analise este caso e desenvolva uma estratégia:</p>
+                        <p>Fatos: [DESCREVA OS FATOS]</p>
+                        <p>Pretensão: [O QUE SE BUSCA]</p>
+                        <p>Desafios: [PRINCIPAIS DESAFIOS]</p>
+                        <p>Forneça: 1) Argumentos principais 2) Jurisprudência favorável 3) Contra-argumentos esperados 4) Plano de ação 5) Riscos e mitigações</p>
+                    </div>
+                    <button class="copy-prompt-btn" data-prompt="Você é um advogado estratégico. Analise este caso e desenvolva uma estratégia: Fatos: [DESCREVA OS FATOS] Pretensão: [O QUE SE BUSCA] Desafios: [PRINCIPAIS DESAFIOS] Forneça: 1) Argumentos principais 2) Jurisprudência favorável 3) Contra-argumentos esperados 4) Plano de ação 5) Riscos e mitigações">Copiar Prompt</button>
+                </div>
+
+                <!-- Revisão de Documento -->
+                <div class="prompt-card" data-category="analise">
+                    <h3>Revisão de Documento</h3>
+                    <p class="prompt-description">Revisa documentos jurídicos para melhorias</p>
+                    <div class="prompt-content">
+                        <p>Você é um revisor jurídico experiente. Revise este documento e aponte:</p>
+                        <p>1. Erros gramaticais ou de redação</p>
+                        <p>2. Inconsistências legais</p>
+                        <p>3. Cláusulas que precisam de clareza</p>
+                        <p>4. Riscos legais potenciais</p>
+                        <p>5. Sugestões de melhoria</p>
+                        <p>Seja conciso e prático nas recomendações.</p>
+                    </div>
+                    <button class="copy-prompt-btn" data-prompt="Você é um revisor jurídico experiente. Revise este documento e aponte: 1. Erros gramaticais ou de redação 2. Inconsistências legais 3. Cláusulas que precisam de clareza 4. Riscos legais potenciais 5. Sugestões de melhoria. Seja conciso e prático nas recomendações.">Copiar Prompt</button>
+                </div>
+
+                <!-- Identificação de Vieses -->
+                <div class="prompt-card" data-category="estrategia">
+                    <h3>Identificação de Vieses</h3>
+                    <p class="prompt-description">Identifica vieses e preconceitos em decisões</p>
+                    <div class="prompt-content">
+                        <p>Você é um especialista em ética jurídica. Analise esta decisão e identifique:</p>
+                        <p>1. Possíveis vieses do julgador</p>
+                        <p>2. Argumentos que podem indicar preconceito</p>
+                        <p>3. Inconsistências com jurisprudência similar</p>
+                        <p>4. Impactos discriminatórios potenciais</p>
+                        <p>5. Argumentos para contestar a decisão</p>
+                        <p>Seja objetivo e baseie-se em evidências.</p>
+                    </div>
+                    <button class="copy-prompt-btn" data-prompt="Você é um especialista em ética jurídica. Analise esta decisão e identifique: 1. Possíveis vieses do julgador 2. Argumentos que podem indicar preconceito 3. Inconsistências com jurisprudência similar 4. Impactos discriminatórios potenciais 5. Argumentos para contestar a decisão. Seja objetivo e baseie-se em evidências.">Copiar Prompt</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gerador de Prompts - Exercício Interativo -->
+    <section class="prompt-generator-section" id="gerador">
+        <div class="container">
+            <h2>Gerador de Prompts - Exercício Prático</h2>
+            <p class="generator-subtitle">Crie seus próprios prompts customizados para testar com ferramentas de IA</p>
+            
+            <div class="generator-container">
+                <div class="generator-form">
+                    <h3>Customize seu Prompt</h3>
+                    
+                    <div class="form-group">
+                        <label for="promptType">Tipo de Tarefa:</label>
+                        <select id="promptType">
+                            <option value="analise">Análise Jurídica</option>
+                            <option value="geracao">Geração de Documento</option>
+                            <option value="pesquisa">Pesquisa Jurísprudencial</option>
+                            <option value="revisao">Revisão de Documento</option>
+                            <option value="estrategia">Estratégia Processual</option>
+                            <option value="personalizado">Personalizado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="promptRole">Papel/Especialidade:</label>
+                        <input type="text" id="promptRole" placeholder="Ex: Advogado especializado em direito contratual" value="Advogado especializado">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="promptContext">Contexto/Descrição:</label>
+                        <textarea id="promptContext" placeholder="Descreva o contexto ou problema que precisa resolver" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="promptRequirements">Requisitos/Instruções:</label>
+                        <textarea id="promptRequirements" placeholder="O que você quer que a IA faça? (Ex: Identifique cláusulas importantes, Crie um rascunho, etc)" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="promptFormat">Formato de Saída:</label>
+                        <select id="promptFormat">
+                            <option value="lista">Lista numerada</option>
+                            <option value="tabela">Tabela</option>
+                            <option value="paragrafo">Parágrafo</option>
+                            <option value="topicos">Tópicos com explicação</option>
+                            <option value="resumo">Resumo executivo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="promptTone">Tom/Estilo:</label>
+                        <select id="promptTone">
+                            <option value="formal">Formal e profissional</option>
+                            <option value="tecnico">Técnico e detalhado</option>
+                            <option value="simples">Simples e direto</option>
+                            <option value="academico">Acadêmico</option>
+                        </select>
+                    </div>
+
+                    <button class="generate-btn" id="generateBtn">Gerar Prompt</button>
+                </div>
+
+                <div class="generator-output">
+                    <h3>Seu Prompt Gerado</h3>
+                    <div class="prompt-output-box" id="promptOutput">
+                        <p class="placeholder-text">Seu prompt gerado aparecerá aqui...</p>
+                    </div>
+                    <div class="output-actions">
+                        <button class="action-btn copy-btn" id="copyGeneratedBtn">Copiar Prompt</button>
+                        <button class="action-btn test-btn" id="testBtn">Testar com IA</button>
+                        <button class="action-btn save-btn" id="saveBtn">Salvar Prompt</button>
+                    </div>
+                    <div id="savedPrompts" class="saved-prompts" style="display:none;">
+                        <h4>Prompts Salvos</h4>
+                        <ul id="savedPromptsList"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Exercícios Práticos -->
     <section class="exercises-section" id="exercicios">
         <div class="container">
             <h2>Exercícios Práticos</h2>
             <div class="exercises-content">
                 <div class="exercise-item">
-                    <h4>Exercício 1: Formulação de Prompts</h4>
-                    <p>Pratique a criação de prompts efetivos para solicitar análises jurídicas a ferramentas de IA. Aprenda a estruturar perguntas complexas de forma clara e objetiva.</p>
+                    <h4>Exercício 1: Prompt Engineering Básico</h4>
+                    <p>Pratique a criação de prompts efetivos para solicitar análises jurídicas a ferramentas de IA.</p>
+                    <button class="exercise-button" data-exercise="exercise1">Abrir Exercício</button>
                 </div>
 
                 <div class="exercise-item">
-                    <h4>Exercício 2: Análise de Documentos</h4>
-                    <p>Use ferramentas de IA para analisar contratos, identificar cláusulas importantes e extrair informações relevantes automaticamente.</p>
+                    <h4>Exercício 2: Análise de Documentos com IA</h4>
+                    <p>Use ferramentas de IA para analisar contratos e extrair informações relevantes.</p>
+                    <button class="exercise-button" data-exercise="exercise2">Abrir Exercício</button>
                 </div>
 
                 <div class="exercise-item">
-                    <h4>Exercício 3: Pesquisa Jurisprudencial</h4>
-                    <p>Explore como usar IA para buscar jurisprudência relevante, identificar precedentes e construir argumentações baseadas em dados.</p>
+                    <h4>Exercício 3: Geração de Documentos Jurídicos</h4>
+                    <p>Crie documentos jurídicos com auxílio de IA.</p>
+                    <button class="exercise-button" data-exercise="exercise3">Abrir Exercício</button>
                 </div>
 
                 <div class="exercise-item">
-                    <h4>Exercício 4: Identificação de Viés</h4>
-                    <p>Analise casos reais onde algoritmos apresentaram viés e aprenda a identificar e mitigar esses problemas na prática.</p>
+                    <h4>Exercício 4: Pesquisa Jurisprudencial com IA</h4>
+                    <p>Otimize sua pesquisa jurisprudencial usando IA.</p>
+                    <button class="exercise-button" data-exercise="exercise4">Abrir Exercício</button>
                 </div>
             </div>
         </div>
